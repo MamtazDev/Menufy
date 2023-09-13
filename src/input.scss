@@ -154,6 +154,11 @@ a {
 
 .infoBar {
   border-radius: 16px 16px 0 0 !important;
+  white-space: nowrap;
+}
+
+.infoBar::-webkit-scrollbar{
+  display: none !important;
 }
 
 

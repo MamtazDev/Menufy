@@ -3,11 +3,13 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",
     "{html,js}", './index.html', './information.html', './signUp.html', './verify.html','./resetPassword.html','./resetPasswordStep2.html','./resetPasswordStep3.html','./newpassword.html',
-    './menus.html', './add-items.html','./mainmenu.html'
+    './menus.html', './add-items.html','./mainmenu.html', './subscription.html', './qrcode.html'
   ],
   theme: {
     fontFamily: {
-      'body': ['Montserrat']
+      'body': ['Montserrat'],
+      'popins': ['Poppins']
+
     },
 
     container: {
@@ -39,33 +41,27 @@ module.exports = {
         c_ea: '#E1E5EA',
         c_34: '#343434',
         c_ED: '#EDEDED',
-        input_bg: "#FDFDFD"
+        input_bg: "#FDFDFD",
+        c_EB: '#E5E7EB',
+        c_27: '#111827'
         
       },
 
       fontSize: {
         fs_34: ['2.125rem', { //34px
-          lineHeight: '150%',
-          letterSpacing: ' 0.68px',
           fontWeight: '700'
         }],
 
         fs_18: ['1.125rem', {   //18px
-          letterSpacing: '0.023rem',
-          fontWeight: '400',
-          lineHeight: '150%'
+          fontWeight: '400'
         }],
 
         fs_16: ['1rem', {   //16px
-          letterSpacing: '0.023rem',
-          fontWeight: '600',
-          lineHeight: '0.02rem'
+          fontWeight: '600'
         }],
 
         fs_14: ['0.875rem', {   //14px
-          letterSpacing: '0.023rem',
-          fontWeight: '600',
-          lineHeight: '0.02rem',
+          fontWeight: '600'
         }]
 
       },
@@ -80,7 +76,8 @@ module.exports = {
         p_input: '16px 28px',
         p_23: '33px 28px',
         p_63: '62px',
-        p_60: '16px 50px'
+        p_60: '16px 50px',
+        
       }
 
      
