@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -1267,11 +1255,6 @@ video {
   color: rgb(116 121 133 / var(--tw-text-opacity));
 }
 
-.text-c_ff {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -1451,9 +1434,10 @@ a {
   border-radius: 16px 16px 0 0 !important;
 }
 
-.infoBar .active {
-  color: #FFF;
-  background-color: #006B54;
+.infoTab.active, .infoTab.active span , .infoTab:hover, .infoTab:hover span, .infoTab:hover svg {
+  color: #FFF !important;
+  background-color: #006B54 !important;
+  stroke: #FFF;
 }
 
 .pformBg {

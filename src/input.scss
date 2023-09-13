@@ -107,9 +107,6 @@ a {
   grid-template-columns: 1fr 1fr;
 }
 
-
-
-
 #bgPosition a:hover {
   text-decoration: underline;
 }
@@ -159,11 +156,13 @@ a {
   border-radius: 16px 16px 0 0 !important;
 }
 
-.infoBar .active {
-  color: #FFF;
-  background-color: #006B54;
-}
 
+.infoTab.active, .infoTab.active span , .infoTab:hover, .infoTab:hover span, .infoTab:hover svg {
+  color: #FFF !important;
+  background-color: #006B54 !important;
+  stroke: #FFF;
+}
+  
 
 .pformBg {
   background-position: left 4% top 5%;
