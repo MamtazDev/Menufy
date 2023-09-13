@@ -107,6 +107,17 @@ a {
   grid-template-columns: 1fr 1fr;
 }
 
+
+.menu-items-wrapper .rtl {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.menu-items-wrapper .rtr {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
 #bgPosition a:hover {
   text-decoration: underline;
 }
@@ -184,4 +195,10 @@ a {
 .mediaProfile img{
   width: 157px;
   height: 165px;
+}
+
+.featureBtnActive, .featureBtnActive span{
+  border-color: #006B54;
+  background-color: #F1F6F5;
+  color: #006B54;
 }

@@ -3,7 +3,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",
     "{html,js}", './index.html', './information.html', './signUp.html', './verify.html','./resetPassword.html','./resetPasswordStep2.html','./resetPasswordStep3.html','./newpassword.html',
-    './menus.html', './add-items.html','./mainmenu.html', './subscription.html', './qrcode.html', './links.html'
+    './menus.html', './add-items.html','./mainmenu.html', './subscription.html', './qrcode.html', './links.html', './features.html', './menus-settings.html'
   ],
   theme: {
     fontFamily: {
