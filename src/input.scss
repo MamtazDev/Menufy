@@ -197,7 +197,7 @@ a {
   height: 165px;
 }
 
-.featureBtnActive, .featureBtnActive span{
+.featureBtnActive, .featureBtnActive span , .featureBtnActive:hover, .featureBtnActive:hover span{
   border-color: #006B54;
   background-color: #F1F6F5;
   color: #006B54;
