@@ -71,6 +71,8 @@ a {
   padding: 20px 40px 20px;
 }
 
+#alternative,
+#size,
 #existingitem,
 #pricedes,
 #price {
@@ -81,6 +83,10 @@ a {
   border-radius: 11px;
   padding-left: 40px;
   border: 1px solid #EDEDED;
+}
+
+#size{
+  background-image: url(../assets/img/size.svg);
 }
 
 #pricedes {
@@ -171,7 +177,7 @@ a {
   white-space: nowrap;
 }
 
-.infoBar::-webkit-scrollbar{
+.infoBar::-webkit-scrollbar, .fixDate::-webkit-scrollbar{
   display: none !important;
 }
 
@@ -208,4 +214,22 @@ a {
 
 .toggleBtn input:checked~.dot {
   transform: translateX(100%);
+}
+
+.dayBtn:hover, .dayBtnActive{
+  background-color: #F1F6F5;
+  color: #006B54;
+  border-color: #006B54;
+}
+
+.dayBtn p{
+  visibility: hidden;
+}
+
+.dayBtn:hover.dayBtn p{
+  visibility: visible;
+}
+
+.deleteBtn:hover{
+  stroke: #006B54;
 }
