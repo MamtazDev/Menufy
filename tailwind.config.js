@@ -14,23 +14,20 @@ module.exports = {
 
     container: {
       center: 'true',
-      padding: '1rem',
+      padding: '.5rem',
       screens: {
         sm: '600px',
         md: '728px',
         lg: '984px',
-        xl: '1240px',
-        '2xl': '1185px',
+        xl: '1200px',
       },
     },
 
 
     extend: {
-
       boxShadow: {
         'menuItems': "0px 4px 44px 0px rgba(0, 0, 0, 0.03)"
       },
-
       colors: {
         c_22:'#222',
         c_33: '#333',

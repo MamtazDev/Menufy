@@ -6,6 +6,10 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+.container{
+  max-width: 1200px !important;
+}
+
 .text-center {
   text-align: -webkit-center;
 }
@@ -160,7 +164,6 @@ a {
 .innerBox {
   background: #FDFDFD;
   margin-top: 45px;
-  margin-left: 46px;
 }
 
 .infoBar {
@@ -201,4 +204,8 @@ a {
   border-color: #006B54;
   background-color: #F1F6F5;
   color: #006B54;
+}
+
+.toggleBtn input:checked~.dot {
+  transform: translateX(100%);
 }
