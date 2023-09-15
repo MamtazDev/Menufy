@@ -61,7 +61,7 @@
                     <div class="md:left-0 md:top-0 content-center md:content-start text-left justify-between">
                         <!-- SIDE NAV ITEMS WRAPPER -->
                         <ul class="side-nav text-center">
-                            <li class="text-center py-8 bg-input_bg hover:bg-c_f5 relative">
+                            <li class="sideActive text-center py-8 bg-input_bg hover:bg-c_f5 relative">
                                 <a href="information.html" class="py-1 md:py-3 text-center">
                                     <span class="nav-icon inline-block mb-[12px]">
                                         <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
@@ -172,7 +172,7 @@
                     </div>
                     <div class="drawer-side">
                         <label for="my-drawer" class="drawer-overlay"></label>
-                        <ul class="menu side-nav p-4 w-80 bg-input_bg">
+                        <ul class="menu side-nav p-4 w-80 bg-input_bg  min-h-screen">
                             <li class="py-3">
                                 <a class="text-center flex justify-center" href="index.html">
                                     <img src="./assets/img/loginlogo1.png" alt="LOGO">
@@ -409,24 +409,30 @@
                         <div class="profileInner p-7">
                             <div class="bg-c_ea rounded-2xl pt-[108px] pb-4 mb-[28px]">
                                 <div class="text-center mb-[33px]">
-                                    <img src="./assets/img/cam.png" alt="Cam">
+                                    <input type="text" class="hidden">
+                                    <img class="hover:opacity-90" src="./assets/img/cam.png" alt="Cam">
                                     <p class="text-C_34 text-fs_18">Add Cover Photo</p>
                                 </div>
                                 <div class="flex flex-wrap justify-start gap-2 items-center pl-4">
-                                    <div class="relative">
-                                        <img class="rounded-full" src="./assets/img/Profile2.png" alt="Profile">
-                                        <img class="absolute bottom-3 left-[4.75rem]" src="./assets/img/cam.png"
-                                            alt="cam">
+                                    <div class="overflow-hidden  rounded-full">
+                                        <img class="overflow-hidden rounded-full hover:scale-105 transition ease-in-out  w-[50px] h-[50px] md:h-[90px] md:w-[90px]" src="./assets/img/Profile2.png" alt="Profile">
+                                       
+                                        <!-- <img class=" bottom-3 left-[4.75rem]" src="./assets/img/cam.png"
+                                            alt="cam"> -->
                                     </div>
                                     <p class="text-c_22 text-lg font-semibold">Restaurant Name</p>
                                 </div>
                             </div>
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+
+                                 <!-- BUSINESS Details Start -->
                                 <div class="profileForm  bg-white rounded-2xl h-full p-p_23">
                                     <p class="text-fs_14 text-c_85 mb-2 uppercase">
                                         BUSINESS Details
                                     </p>
                                     <hr class="mb-6">
+
                                     <form action="">
                                         <div class="flex flex-col gap-4">
                                             <div
@@ -437,7 +443,7 @@
                                                     <div class="w-full">
                                                         <label for="businessName" class="text-c_85 block mb-2">Business
                                                             Name</label>
-                                                        <input id="businessName" class="w-full" type="text"
+                                                        <input id="businessName" class="w-full bg-transparent" type="text"
                                                             placeholder="Business Name">
                                                     </div>
                                                 </div>
@@ -446,11 +452,11 @@
                                                 class="pformBg w-full bg-no-repeat bg-input_bg border  border-c_ED hover:border-zinc-300 border-solid rounded-r_11 p-p_input">
                                                 <div class="flex justify-start gap-2">
                                                     <img class="w-[20px] h-[20px]" src="./assets/img/nameICon.png"
-                                                        alt="Business">
+                                                        alt="name">
                                                     <div class="w-full">
                                                         <label for="userName" class="text-c_85 block mb-2">Username
                                                         </label>
-                                                        <input id="userName" class="w-full" type="text"
+                                                        <input id="userName" class="w-full bg-transparent" type="text"
                                                             placeholder="user0122">
                                                     </div>
                                                 </div>
@@ -459,11 +465,11 @@
                                                 class="pformBg w-full bg-no-repeat bg-input_bg border border-c_ED hover:border-zinc-300 border-solid rounded-r_11 p-p_input">
                                                 <div class="flex justify-start gap-2">
                                                     <img class="w-[20px] h-[20px]" src="./assets/img/email.png"
-                                                        alt="Business">
+                                                        alt="email">
                                                     <div class="w-full">
                                                         <label for="email" class="text-c_85 block mb-2">Email
                                                             Address</label>
-                                                        <input id="email" class="w-full" type="email"
+                                                        <input id="email" class="w-full bg-transparent" type="email"
                                                             placeholder="user0122@gmail.com">
                                                     </div>
                                                 </div>
@@ -477,7 +483,7 @@
                                                         <div class="w-full">
                                                             <label for="password"
                                                                 class="text-c_85 block mb-2">Password</label>
-                                                            <input id="password" class="w-full" type="password"
+                                                            <input id="password" class="w-full bg-transparent" type="password"
                                                                 placeholder="*************">
                                                         </div>
                                                         <div>
@@ -501,11 +507,11 @@
                                                 class="pformBg w-full bg-no-repeat bg-input_bg border border-c_ED hover:border-zinc-300 border-solid rounded-r_11 p-p_input">
                                                 <div class="flex justify-start gap-2">
                                                     <img class="w-[20px] h-[20px]" src="./assets/img/about.png"
-                                                        alt="Business">
+                                                        alt="about">
                                                     <div class="w-full">
                                                         <label for="about" class="text-c_85 block mb-2">About </label>
-                                                        <textarea id="about" rows="4" class="block w-full "
-                                                            placeholder="Write your thoughts here..."></textarea>
+                                                        <textarea id="about" rows="4" class="block w-full bg-transparent"
+                                                            placeholder="Describe your business..."></textarea>
                                                     </div>
                                                 </div>
                                             </div>
@@ -514,11 +520,11 @@
                                                 class="pformBg w-full bg-no-repeat bg-input_bg border border-c_ED hover:border-zinc-300 border-solid rounded-r_11 p-p_input">
                                                 <div class="flex justify-start gap-2">
                                                     <img class="w-[20px] h-[20px]" src="./assets/img/location.png"
-                                                        alt="Business">
+                                                        alt="location">
                                                     <div class="w-full">
                                                         <label for="address" class="text-c_85 block mb-2">Address
                                                         </label>
-                                                        <input id="address" class="w-full" type="text"
+                                                        <input id="address" class="w-full bg-transparent" type="text bg-transparent"
                                                             placeholder="Enter your business address">
                                                     </div>
                                                 </div>
@@ -544,14 +550,14 @@
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="pformBg w-full bg-no-repeat bg-input_bg border border-c_ED hover:border-zinc-300 border-solid rounded-r_11 p-p_input">
+                                                    class="pformBg w-full bg-no-repeat bg-input_bg border border-c_ED hover:border-zinc-300  border-solid rounded-r_11 p-p_input">
                                                     <div class="flex justify-start gap-2">
                                                         <img class="w-[20px] h-[20px]" src="./assets/img/phone.png"
-                                                            alt="Business">
+                                                            alt="phone">
                                                         <div class="w-full">
                                                             <label for="phone" class="text-c_85 block mb-2">Phone Number
                                                             </label>
-                                                            <input id="phone" class="w-full" type="number"
+                                                            <input id="phone" class="w-full bg-transparent" type="number"
                                                                 placeholder="122324354355">
                                                         </div>
                                                     </div>
@@ -560,6 +566,9 @@
                                         </div>
                                     </form>
                                 </div>
+                                 <!-- BUSINESS Details End -->
+
+                                <!-- Media -->
                                 <div>
                                     <div class="profileForm  bg-white rounded-2xl p-p_23 mb-7">
                                         <div class="flex items-center justify-start">
@@ -569,23 +578,30 @@
                                             <img src="./assets/img/info.png" alt="Media">
                                         </div>
                                         <hr class="mb-6">
-                                        <div class="mediaProfile flex flex-wrap justify-center items-center  gap-2">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-                                            <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
-
-                                            <div class="rounded-2xl bg-c_f5 border border-dashed border-c_54 p-p_63">
-                                                <img class="" src="./assets/img/upload.png" alt="upload"
-                                                    style="height: 34px; width: 34px;">
-                                                <input type="file" name="" id="" hidden>
+                                        <form action="">
+                                            <div class="mediaProfile flex flex-wrap justify-center items-center  gap-2">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+                                                <img class="rounded-2xl" src="./assets/img/media.png" alt="img">
+    
+    
+                                                <div class="rounded-2xl bg-c_f5 border border-dashed border-c_54 hover:opacity-90 p-p_63">
+                                                    <img class="" src="./assets/img/upload.png" alt="upload"
+                                                        style="height: 34px; width: 34px;">
+                                                    <input type="file" name="" id="" hidden>
+                                                </div>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
+                                    <!-- Media End -->
+
+
+                                    <!-- Additional Settings Start -->
                                     <div class="profileForm  bg-white rounded-2xl p-p_23">
                                         <p class="text-fs_14 text-c_85 mb-2 uppercase">
                                             Additional Settings
@@ -601,26 +617,27 @@
                                                         <div class="w-full">
                                                             <label for="currency" class="text-c_85 block mb-2">Currency
                                                             </label>
-                                                            <input id="currency" class="w-full" type="text"
+                                                            <input id="currency" class="w-full bg-transparent" type="text"
                                                                 placeholder="Euro">
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div
-                                                    class="pformBg w-full bg-no-repeat bg-input_bg border border-c_ED hover:border-zinc-300 border-solid rounded-r_11 p-p_input">
+                                                    class="pformBg w-full bg-no-repeat bg-input_bg border border-c_ED hover:border-zinc-300  border-solid rounded-r_11 p-p_input">
                                                     <div class="flex justify-start gap-2">
                                                         <img class="w-[20px] h-[20px]" src="./assets/img/globe.png"
-                                                            alt="Business">
+                                                            alt="language">
                                                         <div class="w-full">
                                                             <label for="ln" class="text-c_85 block mb-2">Default
                                                                 Language </label>
-                                                            <input id="ln" class="w-full" type="text"
+                                                            <input id="ln" class="w-full bg-transparent" type="text"
                                                                 placeholder="Spanish">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </form>
+                                        <!-- Additional Settings End -->
                                     </div>
                                 </div>
                             </div>

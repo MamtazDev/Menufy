@@ -17,20 +17,21 @@ body {
   visibility: hidden;
 }
 
-.side-nav li:hover .border-line {
-  visibility: visible;
+.side-nav li:hover .border-line, .sideActive.side-nav  li .border-line {
+  visibility: visible !important;
 }
 
-.side-nav li:hover svg {
+.side-nav li:hover svg, .sideActive {
   fill: #006B54;
 }
 
-.side-nav li:hover .nav-icon svg {
+.side-nav li:hover .nav-icon svg, .sideActive {
   stroke: #006B54;
 }
 
-.side-nav li:hover .nav-title {
+.side-nav li:hover .nav-title, .sideActive {
   color: #006B54;
+  background-color: #F1F6F5;
 }
 
 
@@ -86,19 +87,19 @@ a {
 }
 
 #size{
-  background-image: url(../assets/img/size.svg);
+  background-image: url('../assets/img/size.svg');
 }
 
 #pricedes {
-  background-image: url(../assets/img/price-des.svg);
+  background-image: url('../assets/img/price-des.svg');
 }
 
 #price {
-  background-image: url(../assets/img/price.svg);
+  background-image: url("../assets/img/price.svg");
 }
 
 #existingitem {
-  background-image: url(../assets/img/search-icon.svg);
+  background-image: url("../assets/img/search-icon.svg");
   padding-left: 50px;
 }
 
@@ -186,6 +187,10 @@ a {
   color: #FFF !important;
   background-color: #006B54 !important;
   stroke: #FFF;
+}
+
+.coverimg{
+  background-color: #E1E5EA;
 }
   
 
