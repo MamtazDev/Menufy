@@ -17,11 +17,14 @@ body {
   visibility: hidden;
 }
 
-.side-nav li:hover .border-line, .sideActive.side-nav  li .border-line {
+.side-nav li:hover .border-line, .sideActive .border-line {
   visibility: visible !important;
 }
 
-.side-nav li:hover svg, .sideActive {
+
+
+
+.side-nav li:hover svg, .sideActive  {
   fill: #006B54;
 }
 
@@ -188,10 +191,6 @@ a {
   background-color: #006B54 !important;
   stroke: #FFF;
 }
-
-.coverimg{
-  background-color: #E1E5EA;
-}
   
 
 .pformBg {
@@ -215,10 +214,15 @@ a {
   border-color: #006B54;
   background-color: #F1F6F5;
   color: #006B54;
+  stroke: #006B54;
 }
 
 .toggleBtn input:checked~.dot {
   transform: translateX(100%);
+}
+
+.toggleBtn input:checked~.checked-toggle {
+  background-color: #006B54;
 }
 
 .dayBtn:hover, .dayBtnActive{

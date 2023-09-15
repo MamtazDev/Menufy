@@ -54,7 +54,7 @@
   <main>
     <div class="flex flex-col md:flex-row">
       <!-- NAVBAR /-START -->
-      <nav class="min-h-screen">
+      <nav class="md:min-h-screen">
         <div class="fixed bottom-0 md:relative md:h-screen z-10 w-full md:w-48 content-center">
           <div
             class="md:w-48 md:fixed md:left-0 md:top-0 mt-[110px] content-center md:content-start text-left justify-between">
@@ -165,7 +165,7 @@
             <!-- MAIN HEADING /-END -->
 
             <!-- MENU ITEMS WRAPPER -->
-            <div class="menu-items-wrapper bg-input_bg px-[47px] py-8 rounded-2xl mb-5">
+            <div class="menu-items-wrapper bg-input_bg px-0 md:px-[10px] py-8 rounded-2xl mb-5">
               <div class="mt-4">
                 <!-- TAB -->
                 <ul id="tabs" class="w-full flex text-center">
@@ -184,57 +184,58 @@
 
                 <!-- TAB CONTENTS -->
                 <div id="tab-contents">
-                  <div id="first" class="p-4">
+                  <div id="first" class="p-4 overflow-x-scroll md:overflow-x-hidden">
 
-                    <div class="archive-nav p-10">
+                    <div class="archive-nav px-5 md:p-10">
                       <div class="grid grid-cols-12 gap-10">
                         <div class="col-span-2">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Name
                           </p>
                         </div>
                         <div class="col-span-3">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Containing
                           </p>
                         </div>
                         <div class="col-span-3">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Date Archived
                           </p>
                         </div>
                         <div class="col-span-2">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             move
                           </p>
                         </div>
                         <div class="col-span-2">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Delete
                           </p>
                         </div>
                       </div>
                     </div>
 
-                    <div class="archive-items bg-white p-10 shadow-sm rounded-xl mb-10">
+                    <div
+                      class="archive-items bg-white p-5 md:p-5 mb-5 md:mb-10 rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                       <div class="grid grid-cols-12 gap-10">
                         <div class="col-span-2">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             Foods
                           </h2>
                         </div>
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             3 Dishes
                           </h2>
                         </div>
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             08/21/2023
                           </h2>
                         </div>
                         <div class="col-span-2">
-                          <button>
+                          <button class="transform hover:-rotate-45 transition-all ease-in-out duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                               fill="none">
                               <path
@@ -262,25 +263,26 @@
                       </div>
                     </div>
 
-                    <div class="archive-items bg-white p-10 shadow-sm rounded-xl mb-10">
+                    <div
+                      class="archive-items bg-white p-5 md:p-5 mb-5 md:mb-10 rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                       <div class="grid grid-cols-12 gap-10">
                         <div class="col-span-2">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             Drinks
                           </h2>
                         </div>
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             3 Dishes
                           </h2>
                         </div>
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             08/21/2023
                           </h2>
                         </div>
                         <div class="col-span-2">
-                          <button>
+                          <button class="transform hover:-rotate-45 transition-all ease-in-out duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                               fill="none">
                               <path
@@ -308,25 +310,26 @@
                       </div>
                     </div>
 
-                    <div class="archive-items bg-white p-10 shadow-sm rounded-xl mb-10">
+                    <div
+                      class="archive-items bg-white p-5 md:p-5 mb-5 md:mb-10 rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                       <div class="grid grid-cols-12 gap-10">
                         <div class="col-span-2">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             Snacks
                           </h2>
                         </div>
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             3 Dishes
                           </h2>
                         </div>
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             08/21/2023
                           </h2>
                         </div>
                         <div class="col-span-2">
-                          <button>
+                          <button class="transform hover:-rotate-45 transition-all ease-in-out duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                               fill="none">
                               <path
@@ -356,60 +359,63 @@
 
                   </div>
 
-                  <div id="second" class="hidden p-4">
-
+                  <div id="second" class="p-4 overflow-x-scroll md:overflow-x-hidden hidden">
                     <div class="archive-nav p-5">
                       <div class="grid grid-cols-12 gap-10">
                         <div class="col-span-3">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Name
                           </p>
                         </div>
                         <div class="col-span-2">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Containing
                           </p>
                         </div>
                         <div class="col-span-3">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Date Archived
                           </p>
                         </div>
                         <div class="col-span-2">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             move
                           </p>
                         </div>
                         <div class="col-span-2">
-                          <p class="text-c_85 text-fs_14 font-semibold uppercase">
+                          <p class="text-c_85 text-xs md:text-fs_14 font-semibold uppercase">
                             Delete
                           </p>
                         </div>
                       </div>
                     </div>
 
-                    <div class="archive-items bg-white p-5 shadow-sm rounded-xl mb-10">
+                    <div
+                      class="archive-items bg-white p-5 md:p-5 mb-5 md:mb-10 rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                       <div class="grid grid-cols-12 items-center gap-10">
                         <div class="col-span-3">
                           <div class="archive-item flex items-center gap-3">
                             <img src="assets/img/archive-items.svg" alt="archive-items">
-                          <h2 class="text-c_85 text-2xl font-semibold">
-                            Hummus & <br> pita Bread
-                          </h2>
+                            <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
+                              Hummus & <br> pita Bread
+                            </h2>
                           </div>
                         </div>
+
                         <div class="col-span-2">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             €30
                           </h2>
                         </div>
+
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             08/21/2023
                           </h2>
                         </div>
+
                         <div class="col-span-2">
-                          <button>
+                          <button class="transform hover:-rotate-45 transition-all ease-in-out duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                               fill="none">
                               <path
@@ -421,6 +427,7 @@
                             </svg>
                           </button>
                         </div>
+
                         <div class="col-span-2">
                           <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
@@ -437,28 +444,33 @@
                       </div>
                     </div>
 
-                    <div class="archive-items bg-white p-5 shadow-sm rounded-xl mb-10">
+                    <div
+                      class="archive-items bg-white p-5 md:p-5 mb-5 md:mb-10 rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                       <div class="grid grid-cols-12 items-center gap-10">
+
                         <div class="col-span-3">
                           <div class="archive-item flex items-center gap-3">
                             <img src="assets/img/archive-items2.svg" alt="archive-items">
-                          <h2 class="text-c_85 text-2xl font-semibold">
-                            Salad
-                          </h2>
+                            <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
+                              Salad
+                            </h2>
                           </div>
                         </div>
+
                         <div class="col-span-2">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             €40
                           </h2>
                         </div>
+
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             08/21/2023
                           </h2>
                         </div>
+
                         <div class="col-span-2">
-                          <button>
+                          <button class="transform hover:-rotate-45 transition-all ease-in-out duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                               fill="none">
                               <path
@@ -470,6 +482,7 @@
                             </svg>
                           </button>
                         </div>
+
                         <div class="col-span-2">
                           <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
@@ -486,28 +499,33 @@
                       </div>
                     </div>
 
-                    <div class="archive-items bg-white p-5 shadow-sm rounded-xl mb-10">
+                    <div
+                      class="archive-items bg-white p-5 md:p-5 mb-5 md:mb-10 rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                       <div class="grid grid-cols-12 items-center gap-10">
+
                         <div class="col-span-3">
                           <div class="archive-item flex items-center gap-3">
                             <img src="assets/img/archive-items3.svg" alt="archive-items">
-                          <h2 class="text-c_85 text-2xl font-semibold">
-                            Chips
-                          </h2>
+                            <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
+                              Chips
+                            </h2>
                           </div>
                         </div>
+
                         <div class="col-span-2">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             €50
                           </h2>
                         </div>
+
                         <div class="col-span-3">
-                          <h2 class="text-c_85 text-2xl font-semibold">
+                          <h2 class="text-c_85 text-lg md:text-2xl font-semibold">
                             08/21/2023
                           </h2>
                         </div>
+
                         <div class="col-span-2">
-                          <button>
+                          <button class="transform hover:-rotate-45 transition-all ease-in-out duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
                               fill="none">
                               <path
@@ -519,6 +537,7 @@
                             </svg>
                           </button>
                         </div>
+
                         <div class="col-span-2">
                           <button>
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"
@@ -546,8 +565,6 @@
       </section>
       <!-- MAIN CONTENT /-END -->
 
-
-
       <!--MODAL-->
       <dialog id="my_modal_7" class="modal">
         <div class="modal-box">
@@ -555,21 +572,23 @@
             <h3 class="font-bold text-text_color text-2xl">
               Are you sure that you want to delete <br> this permanently?
             </h3>
-
           </div>
 
           <div class="modal-content">
             <div class="final-button text-center flex gap-5 items-center justify-center">
-              <button class="py-[17px] px-[60px] text-fs_18 font-semibold text-c_54 bg-[#F1F6F5] rounded-md">
+              <button
+                class="py-[17px] px-[60px] text-fs_18 font-semibold text-c_54 bg-[#F1F6F5] rounded-md hover:bg-[#e7f7f3] ease-in-out duration-300">
                 Cancel
               </button>
 
-              <button class="py-[17px] px-[60px] text-fs_18 font-semibold text-white bg-c_54 rounded-md">
+              <button
+                class="py-[17px] px-[60px] text-fs_18 font-semibold text-white bg-c_54 hover:bg-green-900 ease-in-out duration-300 rounded-md">
                 Delete
               </button>
             </div>
           </div>
         </div>
+
 
         <!-- close btn -->
         <form method="dialog" class="modal-backdrop">

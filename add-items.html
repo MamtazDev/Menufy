@@ -54,7 +54,7 @@
   <main>
     <div class="flex flex-col md:flex-row">
       <!-- NAVBAR /-START -->
-      <nav class="min-h-screen">
+      <nav class="md:min-h-screen">
         <div class="sticky bottom-0 md:h-screen z-10 w-full md:w-[130px] content-center">
           <div class="md:left-0 md:top-0 content-center md:content-start text-left justify-between">
             <!-- SIDE NAV ITEMS WRAPPER -->
@@ -145,45 +145,56 @@
       <!-- MAIN CONTENT /-START -->
       <section class="w-full">
         <div class="container">
-          <div class="flex-1 bg-white mt-[45px]">
+          <div class="flex-1 bg-white mt-[45px] pb-14 md:pb-[170px]">
             <!-- MAIN HEADING -->
             <div class="mb-5">
-              <div class="flex justify-between">
-                <div class="heading">
-                  <h2 class="text-2xl font-bold text-c_33 mb-8">
-                    Foods > Fresh Food Menu
-                  </h2>
-                  <div class="flex items-center gap-8">
-                    <div class="no-class">
-                      <p class="text-base font-normal text-c_85">
-                        Without dessert - 10€
-                      </p>
-                      <p class="text-base font-normal text-c_85">
-                        With dessert - 12€
-                      </p>
-                    </div>
-                    <img src="assets/img/editable-icon.svg" alt="icon">
+              <div class="">
+                <div class="heading flex flex-wrap items-center justify-between mb-10 mg:mb-0">
+                  <div class="header-head">
+                    <h2 class="text-2xl font-bold text-c_33 mb-8 md:mb-0">
+                      Foods > Fresh Food Menu
+                    </h2>
                   </div>
+                  <div class="setting group">
+                    <button onclick="my_modal_2.showModal()"
+                      class="text-xl font-semibold text-c_85 flex gap-5 items-center">
+                      <div class="transform group-hover:rotate-180 transition duration-500 ease-in-out">
+                        <img src="assets/img/plus-icon.svg" alt="icon">
+                      </div>
+
+                      Add Existing Item
+                    </button>
+                  </div>
+
                 </div>
 
-                <div class="setting">
-                  <button onclick="my_modal_2.showModal()"
-                    class="text-xl font-semibold text-c_85 flex gap-5 items-center">
-                    <img src="assets/img/plus-icon.svg" alt="icon">
-                    Add Existing Item
+                <div class="flex items-center gap-8">
+                  <div class="">
+                    <p class="text-base font-normal text-c_85">
+                      Without dessert - 10€
+                    </p>
+                    <p class="text-base font-normal text-c_85">
+                      With dessert - 12€
+                    </p>
+                  </div>
+                  <button>
+                    <img src="assets/img/editable-icon.svg" alt="icon">
                   </button>
+
                 </div>
+
+
 
               </div>
             </div>
             <!-- MAIN HEADING /-END -->
 
             <!-- ITEMS WRAPPER  -->
-            <div class="bg-input_bg px-[47px] py-8 rounded-2xl mb-5">
+            <div class="bg-input_bg px-5 md:px-[47px] py-8 rounded-2xl mb-5">
               <div class="flex flex-wrap">
-                <div class="w-full md:w-12/12 xl:w-12/12 py-8 px-[42px]">
+                <div class="w-full md:w-12/12 xl:w-12/12 py-8 px-[10px] sm:px-[20px] md:px-[42px]">
                   <div class="">
-                    <ul class="flex justify-end gap-32">
+                    <ul class="flex justify-end gap-4 sm:gap-12 md:gap-24">
                       <li class="text-fs_14 uppercase text-c_85 font-semibold">
                         Publish
                       </li>
@@ -195,7 +206,7 @@
                 </div>
               </div>
 
-              <div class="flex flex-row flex-wrap flex-grow mb-8 bg-white rounded-2xl shadow-menuItems">
+              <div class="flex flex-row flex-wrap flex-grow mb-8 bg-white rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                 <div class="w-full md:w-12/12 xl:w-12/12 p-6">
                   <div class="add-menu flex items-center justify-between">
 
@@ -205,22 +216,22 @@
                       </h2>
                     </div>
 
-                    <div class="menu-setting flex gap-32">
+                    <div class="menu-setting flex items-center gap-1 sm:gap-16 md:gap-32">
                       <div class="btn-toggle">
                         <label for="toggleB" class="cursor-pointer">
                           <!-- toggle -->
                           <div class="relative toggleBtn">
                             <!-- input -->
-                            <input type="checkbox" id="toggleB" class="sr-only" checked>
+                            <input type="checkbox" id="toggleB" class="sr-only">
                             <!-- line -->
-                            <div class="block bg-c_54 w-14 h-8 rounded-full"></div>
+                            <div class="block checked-toggle bg-[#1eaa8c] w-14 h-8 rounded-full"></div>
                             <!-- dot -->
                             <div class="dot absolute left-1 top-1  bg-white w-6 h-6 rounded-full transition"></div>
                           </div>
                         </label>
                       </div>
 
-                      <div class="archive">
+                      <button class="archive">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                           <g opacity="0.8">
                             <path
@@ -231,13 +242,14 @@
                               fill="#747985" />
                           </g>
                         </svg>
-                      </div>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="flex flex-row flex-wrap flex-grow mb-8 bg-white rounded-2xl shadow-menuItems">
+
+              <div class="flex flex-row flex-wrap flex-grow mb-8 bg-white rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                 <div class="w-full md:w-12/12 xl:w-12/12 p-6">
                   <div class="add-menu flex items-center justify-between">
 
@@ -247,22 +259,22 @@
                       </h2>
                     </div>
 
-                    <div class="menu-setting flex gap-32">
+                    <div class="menu-setting flex items-center gap-1 sm:gap-16 md:gap-32">
                       <div class="btn-toggle">
-                        <label for="toggleD" class="cursor-pointer">
+                        <label for="toggleC" class="cursor-pointer">
                           <!-- toggle -->
                           <div class="relative toggleBtn">
                             <!-- input -->
-                            <input type="checkbox" id="toggleD" class="sr-only" checked>
+                            <input type="checkbox" id="toggleC" class="sr-only" checked>
                             <!-- line -->
-                            <div class="block bg-c_54 w-14 h-8 rounded-full"></div>
+                            <div class="block checked-toggle bg-[#1eaa8c] w-14 h-8 rounded-full"></div>
                             <!-- dot -->
                             <div class="dot absolute left-1 top-1  bg-white w-6 h-6 rounded-full transition"></div>
                           </div>
                         </label>
                       </div>
 
-                      <div class="archive">
+                      <button class="archive">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                           <g opacity="0.8">
                             <path
@@ -273,39 +285,39 @@
                               fill="#747985" />
                           </g>
                         </svg>
-                      </div>
+                      </button>
                     </div>
-
                   </div>
                 </div>
               </div>
 
-              <div class="flex flex-row flex-wrap flex-grow mb-8 bg-white rounded-2xl shadow-menuItems">
+
+              <div class="flex flex-row flex-wrap flex-grow mb-8 bg-white rounded-2xl shadow-sm hover:shadow-menuItems duration-300">
                 <div class="w-full md:w-12/12 xl:w-12/12 p-6">
                   <div class="add-menu flex items-center justify-between">
 
                     <div class="menu-name">
                       <h2 class="font-semibold text-2xl text-c_85">
-                        Snacks
+                        Drinks
                       </h2>
                     </div>
 
-                    <div class="menu-setting flex gap-32">
+                    <div class="menu-setting flex items-center gap-1 sm:gap-16 md:gap-32">
                       <div class="btn-toggle">
                         <label for="toggleS" class="cursor-pointer">
                           <!-- toggle -->
                           <div class="relative toggleBtn">
                             <!-- input -->
-                            <input type="checkbox" id="toggleS" class="sr-only" checked>
+                            <input type="checkbox" id="toggleS" class="sr-only">
                             <!-- line -->
-                            <div class="block bg-c_54 w-14 h-8 rounded-full"></div>
+                            <div class="block checked-toggle bg-[#1eaa8c] w-14 h-8 rounded-full"></div>
                             <!-- dot -->
                             <div class="dot absolute left-1 top-1  bg-white w-6 h-6 rounded-full transition"></div>
                           </div>
                         </label>
                       </div>
 
-                      <div class="archive">
+                      <button class="archive">
                         <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50" fill="none">
                           <g opacity="0.8">
                             <path
@@ -316,18 +328,17 @@
                               fill="#747985" />
                           </g>
                         </svg>
-                      </div>
+                      </button>
                     </div>
-
                   </div>
                 </div>
               </div>
 
-              <div class="flex flex-row flex-wrap flex-grow bg-c_f5 border-dashed mb-8 shadow-menuItems">
+              <div class="flex flex-row flex-wrap flex-grow bg-c_f5 border-dashed mb-8 shadow-sm hover:shadow-menuItems duration-300">
                 <div class="w-full md:w-12/12 xl:w-12/12 p-6 border border-c_54 bg-c_f5 rounded-md border-dashed">
                   <div class="flex justify-center">
-                    <button class="flex gap-5 items-center">
-                      <span>
+                    <button class="flex gap-5 items-center group">
+                      <span class="transform group-hover:rotate-180 transition duration-500 ease-in-out">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                           <g clip-path="url(#clip0_586_906)">
                             <path
@@ -341,7 +352,7 @@
                           </defs>
                         </svg>
                       </span>
-                      <span class="text-c_85 font-fs_18 font-semibold">
+                      <span class="text-c_54 font-fs_18 font-semibold">
                         Add Menu
                       </span>
                     </button>
@@ -384,16 +395,18 @@
 
                 <div class="modal-content">
                   <div class="modal-menu-name mb-5">
-                    <input class="w-full outline-none" id="existingitem" type="text" placeholder="Search">
+                    <input class="w-full hover: outline-none focus:outline-slate-300 ease-in-out duration-300"
+                      id="existingitem" type="text" placeholder="Search" autofocus>
                   </div>
 
                   <!-- MODAL MAIN CONTENT GOES TO HERE -->
                   <ul>
                     <li class="mb-10">
                       <label class="cursor-pointer flex items-center gap-8">
-                        <input type="checkbox" checked="checked" class="checkbox checkbox-accent" />
+                        <!-- <input type="checkbox" checked="checked" class="checkbox checkbox-accent" /> -->
+                        <input type="checkbox" class="w-5 h-5 rounded border-gray-300 accent-c_54">
                         <div
-                          class="existingitem_wrapper w-full flex items-center justify-between gap-32 shadow-menuItems p-4 rounded-lg">
+                          class="existingitem_wrapper w-full flex items-center justify-between gap-32 p-4 rounded-lg shadow-sm hover:shadow-menuItems duration-300">
                           <div class="existingitem_thumnail flex items-center justify-between gap-8">
                             <div class="existingitem-img">
                               <img src="assets/img/existing-item-img.png" alt="items-img">
@@ -418,9 +431,8 @@
 
                     <li class="mb-10">
                       <label class="cursor-pointer flex items-center gap-8">
-                        <input type="checkbox" class="checkbox checkbox-accent" />
-                        <div
-                          class="existingitem_wrapper w-full flex items-center justify-between gap-32 shadow-menuItems p-4 rounded-lg">
+                        <input type="checkbox" class="w-5 h-5 rounded border-gray-300 accent-c_54" />
+                        <div class="existingitem_wrapper w-full flex items-center justify-between gap-32 p-4 rounded-lg shadow-sm hover:shadow-menuItems duration-300">
                           <div class="existingitem_thumnail flex items-center justify-between gap-8">
                             <div class="existingitem-img">
                               <img src="assets/img/existing-item-img.png" alt="items-img">
@@ -444,17 +456,21 @@
                     </li>
                   </ul>
 
-                  <!-- MODAL MAIN CONTENT GOES TO HERE -->
+                  <div class="flex justify-start items-center gap-5">
+                    <span class="bg-c_54 h-[34px] w-[34px] text-center flex justify-center items-center text-white text-lg font-medium rounded-full">02</span>
+                    <span class="text-c_85 text-lg font-normal">Items Selected</span>
+                  </div>
 
+                  <!-- MODAL MAIN CONTENT GOES TO HERE -->
 
                 </div>
                 <!-- SUBMIT BUTTON -->
                 <div class="text-center flex gap-5 items-center justify-center">
-                  <button class="py-[17px] px-[60px] text-fs_18 font-semibold text-c_54 bg-[#F1F6F5] rounded-md">
+                  <button class="py-[17px] px-[60px] text-fs_18 font-semibold text-c_54 bg-[#F1F6F5] rounded-md hover:bg-[#e7f7f3] ease-in-out duration-300">
                     Cancel
                   </button>
 
-                  <button class="py-[17px] px-[60px] text-fs_18 font-semibold text-white bg-c_54 rounded-md">
+                  <button class="py-[17px] px-[60px] text-fs_18 font-semibold text-white bg-c_54 hover:bg-green-900 ease-in-out duration-300 rounded-md">
                     Save
                   </button>
                 </div>
@@ -477,7 +493,7 @@
 
 
 
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
 </body>
 
