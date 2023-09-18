@@ -161,120 +161,92 @@
             <!-- MENU ITEMS WRAPPER -->
             <div class="menu-items-wrapper bg-input_bg px-[47px] py-8 rounded-2xl mb-5">
               <div class="mt-4">
-                <div class="detailsmedia pb-10">
+
+                <div class="detailsmedia">
                   <h5 class="text-fs_14 font-semibold uppercase text-c_85 border-b pb-3 mb-10">
                     details and media
                   </h5>
                   <div class="grid grid-cols-12 gap-5">
-                    <div class="col-span-12 mb-10 lg:mb-0 lg:col-span-8">
+                    <div class="col-span-12 mb-32 lg:mb-0 lg:col-span-7">
                       <div class="grid grid-cols-12 gap-5 mb-5">
-                        <div class="col-span-8">
-                          <input class="w-full" id="menuname" type="text">
+                        <div class="col-span-12 lg:col-span-8">
+                          <input class="w-full" id="menuname" type="text" placeholder="Name">
                         </div>
-                        <div class="col-span-4">
-                          <input class="w-full" id="price" type="text">
+                        <div class="col-span-12 lg:col-span-4">
+                          <input class="w-full" id="price" type="text" placeholder="Price">
                         </div>
                       </div>
-                      <textarea class="w-full outline-none h-[88%]" name="" id="menudescription" cols="30"
-                        rows="10"></textarea>
+
+                      <textarea class="w-full outline-none h-[50%] mb-5" name="" id="menudescription" cols="30"
+                        rows="10" placeholder="Add a description"></textarea>
+
+                      <!-- CHOOSE A SIZE -->
+                      <div class="p-5 rounded-xl border border-[#EDEDED] bg-white mb-10">
+                        <p class="text-base font-medium text-c_33 mb-2">
+                          Choose a size:
+                        </p>
+                        <div class="size flex flex-wrap gap-5">
+                          <button
+                            class="text-base font-medium text-c_85 hover:text-c_54 transition-all ease-in-out duration-300">
+                            Small (10€),
+                          </button>
+
+                          <button
+                            class="text-base font-medium text-c_85 hover:text-c_54 transition-all ease-in-out duration-300">
+                            Medium (12€),
+                          </button>
+
+                          <button
+                            class="text-base font-medium text-c_85 hover:text-c_54 transition-all ease-in-out duration-300">
+                            Large (14€)
+                          </button>
+                        </div>
+                      </div>
+                      <!-- CHOOSE A SIZE /-END -->
+
+                      <!-- OPTIONS -->
+                      <div class="options mb-10">
+                        <div class="grid grid-cols-12 gap-4">
+                          <div class="col-span-12 lg:col-span-4">
+                            <button
+                              class="add-item flex items-center gap-4 text-fs_18 text-c_54 font-semibold justify-center w-full border border-c_54 border-dashed bg-c_f5 rounded-md py-4">
+                              <a href="#">
+                                Choose Size
+                              </a>
+                            </button>
+                          </div>
+
+                          <div class="col-span-12 lg:col-span-4">
+                            <button
+                              class="add-item flex items-center gap-4 text-fs_18 text-c_54 font-semibold justify-center w-full border border-c_54 border-dashed bg-c_f5 rounded-md py-4">
+
+                              <a href="#">
+                                Choose between
+                              </a>
+                            </button>
+                          </div>
+
+                          <div class="col-span-12 lg:col-span-4">
+                            <button
+                              class="add-item flex items-center gap-4 text-fs_18 text-c_54 font-semibold justify-center w-full border border-c_54 border-dashed bg-c_f5 rounded-md py-4">
+                              <a href="#">
+                                Choose Extras
+                              </a>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- OPTIONS /-END -->
                     </div>
-                    <div class="col-span-12 mb-10 lg:mb-0 lg:col-span-4">
+
+                    <div class="col-span-12 mb-10 lg:mb-0 lg:col-span-5">
                       <div class="thumbanil">
                         <img class="w-full" src="assets/img/add-photo.svg" alt="thumbnail">
-                        <div class="thumbnail-slider flex flex-wrap gap-5 lg:gap-0 lg:flex-nowrap items-center justify-between mt-5">
-                          <img src="assets/img/add-photo-1.svg" alt="slider-thumbnail">
-                          <img src="assets/img/add-photo-2.svg" alt="slider-thumbnail">
-                          <img src="assets/img/add-photo-3.svg" alt="slider-thumbnail">
-                        </div>
                       </div>
                     </div>
+
                   </div>
                 </div>
-
-                <!-- OPTIONS -->
-                <div class="options pb-10">
-                  <h5 class="text-fs_14 font-semibold uppercase text-c_85 border-b pb-3 mb-10">
-                    details and media
-                  </h5>
-
-                  <div class="grid grid-cols-12 gap-4">
-                    <div class="col-span-12 lg:col-span-4">
-                      <button
-                        class="add-item flex items-center gap-4 text-fs_18 text-c_54 font-semibold justify-center w-full border border-c_54 border-dashed bg-c_f5 rounded-md py-4">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
-                            <g clip-path="url(#clip0_1000_2437)">
-                              <path
-                                d="M18.9999 8.99999H11.0001V0.999937C11.0001 0.448078 10.552 0 9.99993 0C9.44807 0 8.99999 0.448078 8.99999 0.999937V8.99999H0.999937C0.448078 8.99999 0 9.44807 0 9.99993C0 10.552 0.448078 11.0001 0.999937 11.0001H8.99999V18.9999C8.99999 19.552 9.44807 20 9.99993 20C10.552 20 11.0001 19.552 11.0001 18.9999V11.0001H18.9999C19.552 11.0001 20 10.552 20 9.99993C20 9.44807 19.552 8.99999 18.9999 8.99999Z"
-                                fill="#006B54" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_1000_2437">
-                                <rect width="20" height="20" fill="white" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-
-                        <a href="#">
-                          Choose Size
-                        </a>
-                      </button>
-                    </div>
-
-                    <div class="col-span-12 lg:col-span-4">
-                      <button
-                        class="add-item flex items-center gap-4 text-fs_18 text-c_54 font-semibold justify-center w-full border border-c_54 border-dashed bg-c_f5 rounded-md py-4">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
-                            <g clip-path="url(#clip0_1000_2437)">
-                              <path
-                                d="M18.9999 8.99999H11.0001V0.999937C11.0001 0.448078 10.552 0 9.99993 0C9.44807 0 8.99999 0.448078 8.99999 0.999937V8.99999H0.999937C0.448078 8.99999 0 9.44807 0 9.99993C0 10.552 0.448078 11.0001 0.999937 11.0001H8.99999V18.9999C8.99999 19.552 9.44807 20 9.99993 20C10.552 20 11.0001 19.552 11.0001 18.9999V11.0001H18.9999C19.552 11.0001 20 10.552 20 9.99993C20 9.44807 19.552 8.99999 18.9999 8.99999Z"
-                                fill="#006B54" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_1000_2437">
-                                <rect width="20" height="20" fill="white" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-
-                        <a href="#">
-                          Choose between
-                        </a>
-                      </button>
-                    </div>
-
-                    <div class="col-span-12 lg:col-span-4">
-                      <button
-                        class="add-item flex items-center gap-4 text-fs_18 text-c_54 font-semibold justify-center w-full border border-c_54 border-dashed bg-c_f5 rounded-md py-4">
-                        <span>
-                          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
-                            fill="none">
-                            <g clip-path="url(#clip0_1000_2437)">
-                              <path
-                                d="M18.9999 8.99999H11.0001V0.999937C11.0001 0.448078 10.552 0 9.99993 0C9.44807 0 8.99999 0.448078 8.99999 0.999937V8.99999H0.999937C0.448078 8.99999 0 9.44807 0 9.99993C0 10.552 0.448078 11.0001 0.999937 11.0001H8.99999V18.9999C8.99999 19.552 9.44807 20 9.99993 20C10.552 20 11.0001 19.552 11.0001 18.9999V11.0001H18.9999C19.552 11.0001 20 10.552 20 9.99993C20 9.44807 19.552 8.99999 18.9999 8.99999Z"
-                                fill="#006B54" />
-                            </g>
-                            <defs>
-                              <clipPath id="clip0_1000_2437">
-                                <rect width="20" height="20" fill="white" />
-                              </clipPath>
-                            </defs>
-                          </svg>
-                        </span>
-
-                        <a href="#">
-                          Choose Extras
-                        </a>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-                <!-- OPTIONS /-END -->
 
                 <!-- COMMON ALLERGENS -->
                 <div class="common-allergens pb-10">
@@ -284,10 +256,11 @@
                     </h2>
                   </div>
 
-                  <div class="grid grid-cols-10 gap-5">
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                  <div class="flex flex-wrap gap-8">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
                             fill="none">
                             <path
@@ -357,11 +330,12 @@
                           Gluten
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                             fill="none">
                             <path
@@ -380,11 +354,12 @@
                           Soy
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <g clip-path="url(#clip0_1000_550)">
@@ -437,11 +412,12 @@
                           Fish
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -484,11 +460,12 @@
                           Sesame
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <g clip-path="url(#clip0_1000_516)">
@@ -556,11 +533,12 @@
                           Celery
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <g clip-path="url(#clip0_1000_640)">
@@ -616,11 +594,12 @@
                           Milk
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <g clip-path="url(#clip0_1000_586)">
@@ -658,11 +637,12 @@
                           Nuts
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <g clip-path="url(#clip0_1000_599)">
@@ -730,11 +710,12 @@
                           Crustaceans
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -777,11 +758,12 @@
                           Mustard
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <g clip-path="url(#clip0_1000_659)">
@@ -819,11 +801,12 @@
                           Sulphites
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -839,11 +822,12 @@
                           Eggs
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -868,11 +852,12 @@
                           Peanuts
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -906,11 +891,12 @@
                           Molluscs
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <g clip-path="url(#clip0_1000_710)">
@@ -993,23 +979,25 @@
                           Lupins
                         </span>
                       </div>
-                    </div>
+                    </button>
+
                   </div>
                 </div>
                 <!-- COMMON ALLERGENS /-END -->
 
                 <!-- DIETS -->
-                <div class="pb-[100px]">
+                <div class="pb-[50px]">
                   <div class="border-b mb-8">
                     <h2 class="text-c_85 text-fs_14 capitalize font-semibold py-4">
                       Diets
                     </h2>
                   </div>
 
-                  <div class="grid grid-cols-10 gap-5">
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                  <div class="flex flex-wrap gap-8 mb-5">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 20 21"
                             fill="none">
                             <path
@@ -1029,11 +1017,12 @@
                           Vegetarian
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -1048,7 +1037,7 @@
                           Vegan
                         </span>
                       </div>
-                    </div>
+                    </button>
                   </div>
 
                   <p class="text-fs_14 text-c_85 font-medium mb-8">
@@ -1066,15 +1055,14 @@
                 <!-- Add More Information -->
                 <div class="additional-lavels">
                   <div class="border-b mb-8">
-                    <h2 class="text-c_85 text-fs_14 capitalize font-semibold py-4">
-                      ADDITIONAL Labels
-                    </h2>
+                    <h2 class="text-c_85 text-fs_14 capitalize font-semibold py-4"> ADDITIONAL Labels </h2>
                   </div>
 
-                  <div class="grid grid-cols-10 gap-5">
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                  <div class="flex flex-wrap gap-8 mb-5">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -1092,11 +1080,12 @@
                           Spicy
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <rect x="0.375" y="0.375" width="17.25" height="17.25" rx="8.625" fill="white" />
@@ -1124,11 +1113,12 @@
                           Very Spicy
                         </span>
                       </div>
-                    </div>
+                    </button>
 
-                    <div class="col-span-10 lg:col-span-2">
-                      <div class="inline-block mb-10">
-                        <span class="text-base font-medium text-c_85 flex gap-4 border py-[10px] px-[20px] rounded-3xl">
+                    <button class="single-item group">
+                      <div class="inline-block">
+                        <span
+                          class="text-base font-medium text-c_85 group-hover:text-c_54 flex gap-4 border group-hover:border-green-700 transition-all ease-in-out duration-300  py-[10px] px-[20px] rounded-3xl">
                           <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18"
                             fill="none">
                             <path
@@ -1164,10 +1154,39 @@
                           Super Spicy
                         </span>
                       </div>
-                    </div>
+                    </button>
                   </div>
                 </div>
                 <!-- Add More Information /-END -->
+
+                <!-- ADD MORE -->
+                <p class="text-fs_18 font-semibold text-c_33 mb-5">
+                  Add More Information
+                </p>
+
+                <div class="add-more-info flex items-center gap-4 border p-3 rounded-xl mb-10">
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                      <g clip-path="url(#clip0_1000_2134)">
+                        <path
+                          d="M10 0C4.486 0 0 4.48606 0 10.0001C0 15.5141 4.486 20 10 20C15.514 20 20 15.5141 20 10.0001C20 4.48606 15.514 0 10 0ZM10 18.1818C5.48848 18.1818 1.81818 14.5115 1.81818 10.0001C1.81818 5.48861 5.48848 1.81818 10 1.81818C14.5115 1.81818 18.1818 5.48861 18.1818 10.0001C18.1818 14.5115 14.5115 18.1818 10 18.1818Z"
+                          fill="#747985" />
+                        <path
+                          d="M9.99899 4.24219C9.33075 4.24219 8.78711 4.78619 8.78711 5.45485C8.78711 6.12291 9.33075 6.66643 9.99899 6.66643C10.6672 6.66643 11.2109 6.12291 11.2109 5.45485C11.2109 4.78619 10.6672 4.24219 9.99899 4.24219ZM9.99911 8.48461C9.49705 8.48461 9.09002 8.89164 9.09002 9.3937V14.8482C9.09002 15.3503 9.49705 15.7573 9.99911 15.7573C10.5012 15.7573 10.9082 15.3503 10.9082 14.8482V9.3937C10.9082 8.89164 10.5012 8.48461 9.99911 8.48461Z"
+                          fill="#747985" />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1000_2134">
+                          <rect width="20" height="20" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </span>
+                  <p class="text-fs_18 font-medium text-c_85">
+                    Additional Allergen Information
+                  </p>
+                </div>
+                <!-- ADD MORE ADITIONAL -->
 
                 <!-- ADD ADDITIONAL -->
                 <button

@@ -6,49 +6,47 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.container{
+.container {
   max-width: 1200px !important;
 }
 
 .text-center {
   text-align: -webkit-center;
 }
+
 .side-nav .border-line {
   visibility: hidden;
 }
 
-.side-nav li:hover .border-line, .sideActive .border-line {
+.side-nav li:hover .border-line,
+.sideActive .border-line {
   visibility: visible !important;
 }
 
-
-
-
-.side-nav li:hover svg, .sideActive  {
+.side-nav li:hover svg,
+.sideActive {
   fill: #006B54;
 }
 
-.side-nav li:hover .nav-icon svg, .sideActive {
+.side-nav li:hover .nav-icon svg,
+.sideActive {
   stroke: #006B54;
 }
 
-.side-nav li:hover .nav-title, .sideActive {
+.side-nav li:hover .nav-title,
+.sideActive {
   color: #006B54;
   background-color: #F1F6F5;
 }
-
 
 a {
   text-decoration: none;
   transition: 0.3s ease-in-out;
 }
 
-
 :focus-visible {
   outline: none;
 }
-
-
 
 .modal-box {
   max-width: 1145px !important;
@@ -66,6 +64,10 @@ a {
   border: 1px solid #EDEDED;
 }
 
+#menuname:hover {
+  border: 1px solid #c5c5c5;
+}
+
 #menudescription {
   background-image: url(../assets/img/describemenu.svg);
   background-repeat: no-repeat;
@@ -75,6 +77,11 @@ a {
   padding: 20px 40px 20px;
 }
 
+#menuname:hover {
+  border: 1px solid #c5c5c5;
+}
+
+#menuname,
 #alternative,
 #size,
 #existingitem,
@@ -89,7 +96,15 @@ a {
   border: 1px solid #EDEDED;
 }
 
-#size{
+#alternative,
+#size,
+#existingitem,
+#pricedes,
+#price:hover {
+  border: 1px solid #c5c5c5;
+}
+
+#size {
   background-image: url('../assets/img/size.svg');
 }
 
@@ -136,7 +151,10 @@ a {
   text-decoration: underline;
 }
 
-#bgPosition input, .profileForm input , .profileForm textarea, .profileForm select {
+#bgPosition input,
+.profileForm input,
+.profileForm textarea,
+.profileForm select {
   background-position: left 4% center;
   background-size: inherit;
   background-repeat: no-repeat;
@@ -147,7 +165,9 @@ a {
   color: #747985;
 }
 
-#bg_config::placeholder, .profileForm input::placeholder, .profileForm textarea::placeholder {
+#bg_config::placeholder,
+.profileForm input::placeholder,
+.profileForm textarea::placeholder {
   color: var(--text-light, #747985);
   font-size: 1.125rem;
   font-weight: 500;
@@ -181,17 +201,22 @@ a {
   white-space: nowrap;
 }
 
-.infoBar::-webkit-scrollbar, .fixDate::-webkit-scrollbar{
+.infoBar::-webkit-scrollbar,
+.fixDate::-webkit-scrollbar {
   display: none !important;
 }
 
 
-.infoTab.active, .infoTab.active span , .infoTab:hover, .infoTab:hover span, .infoTab:hover svg {
+.infoTab.active,
+.infoTab.active span,
+.infoTab:hover,
+.infoTab:hover span,
+.infoTab:hover svg {
   color: #FFF !important;
   background-color: #006B54 !important;
   stroke: #FFF;
 }
-  
+
 
 .pformBg {
   background-position: left 4% top 5%;
@@ -205,12 +230,15 @@ a {
   letter-spacing: 0.12px;
 }
 
-.mediaProfile img{
+.mediaProfile img {
   width: 157px;
   height: 165px;
 }
 
-.featureBtnActive, .featureBtnActive span , .featureBtn:hover, .featureBtn:hover span{
+.featureBtnActive,
+.featureBtnActive span,
+.featureBtn:hover,
+.featureBtn:hover span {
   border-color: #006B54;
   background-color: #F1F6F5;
   color: #006B54;
@@ -225,20 +253,22 @@ a {
   background-color: #006B54;
 }
 
-.dayBtn:hover, .dayBtnActive{
+.dayBtn:hover,
+.dayBtnActive {
   background-color: #F1F6F5;
   color: #006B54;
   border-color: #006B54;
 }
 
-.dayBtn p{
+.dayBtn p {
   visibility: hidden;
 }
 
-.dayBtn:hover.dayBtn p{
+.dayBtn:hover.dayBtn p {
   visibility: visible;
 }
 
-.deleteBtn:hover{
+.deleteBtn:hover {
   stroke: #006B54;
 }
+
