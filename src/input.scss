@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
+}
+
+.loginImg{
+  max-width: 100%;
+  height: auto;
 }
 
 .container{
@@ -20,8 +25,6 @@ body {
 .side-nav li:hover .border-line, .sideActive .border-line {
   visibility: visible !important;
 }
-
-
 
 
 .side-nav li:hover svg, .sideActive  {
