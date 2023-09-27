@@ -40,7 +40,8 @@ module.exports = {
         c_ED: '#EDEDED',
         input_bg: "#FDFDFD",
         c_EB: '#E5E7EB',
-        c_27: '#111827'
+        c_27: '#111827',
+        c_c9:  '#B2CFC9'
         
       },
 
