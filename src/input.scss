@@ -207,7 +207,7 @@ a {
 }
 
 .infoBar::-webkit-scrollbar,
-.fixDate::-webkit-scrollbar {
+.fixDate::-webkit-scrollbar, .hiddenScroll::-webkit-scrollbar {
   display: none !important;
 }
 

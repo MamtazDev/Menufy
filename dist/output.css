@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -875,13 +863,10 @@ video {
   height: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .h-\[28px\] {
   height: 28px;
 }
 
->>>>>>> b763c738b2ebe854400f8481d4e5a5574a767289
 .h-\[34px\] {
   height: 34px;
 }
@@ -902,11 +887,6 @@ video {
   height: 64px;
 }
 
-<<<<<<< HEAD
-.h-\[88\%\] {
-  height: 88%;
-}
-
 .h-auto {
   height: auto;
 }
@@ -915,12 +895,6 @@ video {
   height: 100%;
 }
 
-=======
-.h-full {
-  height: 100%;
-}
-
->>>>>>> b763c738b2ebe854400f8481d4e5a5574a767289
 .min-h-screen {
   min-height: 100vh;
 }
@@ -969,13 +943,10 @@ video {
   width: 22px;
 }
 
-<<<<<<< HEAD
-=======
 .w-\[28px\] {
   width: 28px;
 }
 
->>>>>>> b763c738b2ebe854400f8481d4e5a5574a767289
 .w-\[34px\] {
   width: 34px;
 }
@@ -996,13 +967,10 @@ video {
   width: 100%;
 }
 
-<<<<<<< HEAD
-=======
 .min-w-full {
   min-width: 100%;
 }
 
->>>>>>> b763c738b2ebe854400f8481d4e5a5574a767289
 .max-w-\[1440px\] {
   max-width: 1440px;
 }
@@ -1735,10 +1703,6 @@ video {
   text-transform: capitalize;
 }
 
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
 .text-\[\#6B7280\] {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -2053,7 +2017,7 @@ a {
 }
 
 .infoBar::-webkit-scrollbar,
-.fixDate::-webkit-scrollbar {
+.fixDate::-webkit-scrollbar, .hiddenScroll::-webkit-scrollbar {
   display: none !important;
 }
 
